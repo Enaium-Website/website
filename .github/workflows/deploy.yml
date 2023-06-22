@@ -16,11 +16,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: "pnpm"
-      - name: Install dependencies
-        run: pnpm install
-      - name: Build Packages
-        run: pnpm docs:build
+      - run: npm install
+      - run: npm run docs:build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         # If you're changing the branch from main,
