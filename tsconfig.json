@@ -1,0 +1,20 @@
+{
+    "include": [
+        ".vitepress/**/*",
+        ".vitepress/**/*.tsx"
+    ],
+    "exclude": [
+        ".vitepress/**/__tests__/*"
+    ],
+    "compilerOptions": {
+        "jsx": "preserve",
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "./.vitepress/*"
+            ]
+        },
+        "jsxImportSource": "vue"
+    }
+}
