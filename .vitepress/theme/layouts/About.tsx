@@ -1,6 +1,4 @@
-import { Content } from "vitepress"
 import { defineComponent } from "vue"
-import { NButton } from "naive-ui"
 
 export default defineComponent(() => {
   return () => (
