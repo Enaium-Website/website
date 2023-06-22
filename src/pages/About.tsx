@@ -1,9 +1,7 @@
-import { defineComponent } from "vue"
-
-export default defineComponent(() => {
-  return () => (
+const About = () => {
+  return (
     <>
-      <div class="flex flex-col justify-center items-center h-full">
+      <div className="flex flex-col justify-center items-center h-full">
         <p>I don't know what to write here, but I'm sure I'll think of something</p>
         <p>It's too hard to think of things to write about myself.</p>
         <p>Maybe I'll write about my hobbies or something.</p>
@@ -15,4 +13,6 @@ export default defineComponent(() => {
       </div>
     </>
   )
-})
+}
+
+export default About

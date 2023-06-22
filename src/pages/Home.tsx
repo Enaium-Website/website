@@ -1,42 +1,43 @@
-import { Content } from "vitepress"
-import { defineComponent } from "vue"
-import Logo from "../../../assets/logo.png"
-import { Tag } from "vant"
+import Logo from "@/assets/logo.png"
+import { Button, Tag } from "antd"
+import { Link } from "react-router-dom"
 
-export default defineComponent(() => {
-  return () => (
+const Home = () => {
+  return (
     <>
-      <div class={"flex flex-col justify-center items-center h-full"}>
-        <img class={"w-32"} src={Logo} />
+      <div className="flex flex-col justify-center items-center h-full">
+        <img className="w-32" src={Logo} />
         <p>Hi! I'm Enaium, a Full Stack Developer(I think so).</p>
         <p>
           Maybe you want to know some of my projects, you can go to{" "}
-          <Tag
+          <Button
             type={"primary"}
             onClick={() => {
               window.open("https://github.com/Enaium")
             }}
           >
             GitHub
-          </Tag>
+          </Button>
         </p>
         <p>
           Then I also write some articles on{" "}
-          <Tag
+          <Button
             type={"primary"}
             onClick={() => {
               window.open("https://blog.enaium.cn")
             }}
           >
             Blog
-          </Tag>
+          </Button>
           , But it's Chinese, so maybe I'll write English articles in the future.
         </p>
         <p>
-          And I also write some mods of game, like <Tag type={"primary"}>Minecraft</Tag> and
-          <Tag type={"primary"}>Stardew Valley</Tag>, you can go to Mod Page to see them.
+          And I also write some mods of game, like <Tag color={"blue"}>Minecraft</Tag> and
+          <Tag color={"blue"}>Stardew Valley</Tag>, you can go to <Link to={"/mod"}>Mods Page</Link> to see them.
         </p>
       </div>
     </>
   )
-})
+}
+
+export default Home
