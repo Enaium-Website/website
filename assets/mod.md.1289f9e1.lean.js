@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as o}from"./chunks/framework.f313fd41.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{"layout":"mod"},"headers":[],"relativePath":"mod.md","filePath":"mod.md"}'),a={name:"mod.md"};function r(s,c,d,n,m,p){return t(),o("div")}const f=e(a,[["render",r]]);export{i as __pageData,f as default};
