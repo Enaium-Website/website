@@ -24,7 +24,9 @@ const MainLayout = () => {
   return (
     <>
       <div className="flex flex-col h-screen">
-        <Menu className="sticky top-0" mode="horizontal" items={items} selectable={false} />
+        <div className="flex justify-center">
+          <Menu className="sticky top-0" mode="horizontal" items={items} selectable={false} />
+        </div>
         <div className="flex-grow">
           <Outlet />
         </div>
