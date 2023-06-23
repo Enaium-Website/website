@@ -10,7 +10,7 @@ interface ModrinthProject {
   game_versions: string[]
   description: string
   title: string
-  sulg: string
+  slug: string
   source_url: string
   issues_url: string
 }
